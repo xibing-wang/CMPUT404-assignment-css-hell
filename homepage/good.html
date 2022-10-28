@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Xibing Wang" />
+    <title>GoodHomepage</title>
+    <style>
+      body {
+        /* background-color: #a3cef1; */
+        animation: scroll 70s linear infinite;
+        background: url("https://cdn.fansshare.com/photograph/oilpaint/abstract-background-large-strokes-of-bright-green-oil-paint-strokes-758278299.jpg");
+        color: #eee;
+        height: 100vh;
+        min-width: 360px;
+        width: 100%;
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+      }
+
+      @keyframes scroll {
+        100% {
+          background-position: 0px -3000px;
+        }
+      }
+
+      img {
+        height: 300px;
+        margin-bottom: 60px;
+        margin-left: 5px;
+      }
+      .image-cropper {
+        background-color: #4c7451;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 100%;
+      }
+
+      #myName {
+        margin: auto;
+        margin-bottom: 60px;
+        text-align: center;
+        color: #fed0bb;
+        font-size: 5em;
+        transition: 0.5s;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 1px 0 #e4f0d0, 0 2px 0 #e4f0d0, 0 3px 0 #e4f0d0,
+          0 4px 0 #e4f0d0, 0 5px 0 #e4f0d0, 0 6px 0 #e4f0d0, 0 7px 0 #e4f0d0,
+          0 8px 0 #e4f0d0, 0 9px 0 #e4f0d0, 0 10px 0 #e4f0d0, 0 11px 0 #e4f0d0,
+          0 12px 0 #e4f0d0, 0 20px 30px rgba(132, 163, 106, 0.5);
+      }
+
+      /* #myName:hover {
+        text-shadow: 0 1px 0 #e4f0d0, 0 2px 0 #e4f0d0, 0 3px 0 #e4f0d0,
+          0 4px 0 #e4f0d0, 0 5px 0 #e4f0d0, 0 6px 0 #e4f0d0, 0 7px 0 #e4f0d0,
+          0 8px 0 #e4f0d0, 0 9px 0 #e4f0d0, 0 10px 0 #e4f0d0, 0 11px 0 #e4f0d0,
+          0 12px 0 #e4f0d0, 0 20px 30px rgba(132, 163, 106, 0.5);
+      } */
+      #Title {
+        font-size: 70px;
+        color: #deb2c0;
+        text-align: center;
+        font-family: "Arial Black", Gadget, sans-serif;
+        text-shadow: 0px 0px 0 rgb(217, 173, 187), 1px 1px 0 rgb(212, 168, 182),
+          2px 2px 0 rgb(207, 163, 177), 3px 3px 0 rgb(202, 158, 172),
+          4px 4px 0 rgb(197, 153, 167), 5px 5px 0 rgb(192, 148, 162),
+          6px 6px 0 rgb(187, 143, 157), 7px 7px 0 rgb(182, 138, 152),
+          8px 8px 0 rgb(177, 133, 147), 9px 9px 0 rgb(172, 128, 142),
+          10px 10px 0 rgb(167, 123, 137), 11px 11px 10px rgba(0, 0, 0, 0.6),
+          11px 11px 1px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #firstpart {
+        margin: auto;
+        height: 300px;
+        /* max-height: 600px; */
+        width: 100%;
+        background-color: hsla(200, 40%, 30%, 0.4);
+        background-image: url("https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png"),
+          url("https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"),
+          url(https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png),
+          url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
+
+        background-repeat: repeat-x;
+        background-position: 0 -7%, 0 50%, 0 20%, 0 0;
+        background-size: 1500px, 500px 200px, 1000px, 400px 260px;
+        animation: 50s para infinite linear;
+      }
+
+      @keyframes para {
+        100% {
+          background-position: -500px 20%, 1000px 100%, 400px 0;
+        }
+      }
+
+      .Paragraph {
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 1.6;
+        font-size: 1.8rem;
+        text-indent: 3rem;
+        font-weight: bold;
+        font-family: Chalkduster
+      }
+
+      .subTitle{
+        font-weight: bolder; 
+        font-family: Marker Felt;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div id="firstpart">
+      <h1 id="myName">Xibing Wang</h1>
+      <div class="image-cropper">
+        <img src="me.jpg" alt="My Profile Photo" class="rounded" />
+      </div>
+    </div>
+    <!-- <div class="image-cropper">
+      <img src="me.jpg" alt="Girl in a jacket" class="rounded" />
+    </div> -->
+    <br />
+    <h1 id="Title">Who am I</h1>
+    <div
+      style="
+        background-color: rgba(96, 178, 200, 0.408);
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25px;;
+      "
+    >
+      <p class="Paragraph">
+        Strong communicator and reliable team player. Computer Science &
+        Mathematics double major expected graduating from University of Alberta
+        with experience in multi programming languages such as Python, C,
+        risc-v, SQL, MongoDB, lisp, prolog, and am familiar with mathematics and
+        statistic concepts. 
+      </p>
+    </div>
+
+    <h1 id="Title">professional history</h1>
+    <div style=
+       "background-color: rgba(96, 178, 200, 0.408);
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25px;">
+    <div style="margin-left:100px; margin-right: 100px;">
+        <br>
+    <p class="subTitle">
+      APPLICATION DESIGN BY JAVA Winter 2021 
+      <ul style="font-family:papyrus; font-size: 1.2rem;">
+        <li>Designed and implemented a
+            simple, attractive, and easy-to-use Android application that allows
+            crowd-sourced testing of phenomena by using android studio (software),
+            java (language), and firebase (software)</li>
+        <li>Implemented several key
+            functions such as subscribing to an experiment, asking, replying, and
+            browsing questions; editing contact information; logging in without
+            username and password, etc. </li>
+        <li>Responsible for analyzing data and
+            visualizing statistics data on the app.</li>
+       </ul>
+    </p>
+    <p class="subTitle">
+      APPLICATION DESIGN BY MongoDB AND PYTHON Fall 2019 
+      <ul style="font-family:papyrus; font-size: 1.2rem;">
+        <li>Wrote a python
+        program that used data in NoSQL files, which is json files, to construct
+        our collections in MongoDB.</li>
+        <li>This program supports several operations on
+            the MongoDB database, such as search, post a question, answer, vote, and
+            action as an anonymous user, etc. </li>
+        <li>Tested and demoed the program with
+            different data sets confirming required functions worked properly and
+            within required time.</li>
+      </ul> 
+    </p>
+    <p class="subTitle">
+      APPLICATION DESIGN BY SQLite AND PYTHON Fall 2019 
+      <ul style="font-family:papyrus; font-size: 1.2rem;">
+        <li>Wrote a python program
+        that used data in SQL files that allowed user to login or register,
+        implemented functions listed in a menu, and updated database after
+        actions. </li>
+        <li>Implemented a query interface by using python and created an
+            information retrieval system by using SQL • Demoed the application by
+            performing various tasks and showing how it was handling each task</li>
+        <li> Responsible for vote and mark functions and formatting displayed
+            information.</li>
+      </ul>
+    </p>
+    <br>
+</div>
+</div>
+
+    <h1 id="Title">
+      What I can do for a potential employer
+    </h1>
+
+    <div style=
+       "background-color: rgba(96, 178, 200, 0.408);
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25px;">
+        <br>
+      <ul style="
+                margin-left: 50px;
+                margin-right: 50px;
+                line-height: 1.6;
+                font-size: 1.8rem;
+                text-indent: 3rem;
+                font-weight: bold;
+                font-family: Marker Felt;">
+        <li>Languages: Java, Python, C</li>
+        <li>Databases: SQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>                                                                                             
+      </ul>
+      <br>
+    
+    </div>
+
+    <h1 id="Title">
+      Important points you should know about me
+    </h1>
+
+   <div style=
+   "background-color: rgba(96, 178, 200, 0.408);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;">
+    
+    <p class="Paragraph">
+      I am passionate about technology and keen to learn.
+      I aim to leverage my knowledge and experience to excel in my work.
+      Frequently praised as focused and diligent by my colleagues, I can be
+      relied on to help your organization achieve its goals.
+    </p>
+    </div>
+
+    <br>
+    
+    <h1 style="
+    text-align-last: right; 
+    margin-right: 10%; 
+    font-family: Brush Script MT;
+    color: #a2d2ff;
+    text-shadow:5px 2px 0px #3d4b91;">
+    Hope you enjoy this exploration!
+  </h1> 
+    <br>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+head {
+  display: block;
+  color: #eabfcb;
+}
+title {
+  display: block;
+  /* font-size: 300%; */
+  font-weight: bold;
+  text-align: center;
+  color: #a4508b;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  background-image: url(https://i.stack.imgur.com/kb0Zm.jpg);
+}
+pre {
+  color: #9dc3c2;
+}
+h1 {
+  color: #2b9348;
+  font-family: "Courier New", monospace;
+}
+h2 {
+  color: #606c38;
+  font-family: "Courier New", monospace;
+}
+h3 {
+  color: #457b9d;
+  font-family: "Trebuchet MS", sans-serif;
+}
+table {
+  color: #9a8c98;
+}
+div {
+  color: #55a630;
+  font-style: oblique;
+}
+p {
+  font-family: "Brush Script MT", cursive;
+  color: #bc6c25;
+}
+img {
+  border: 30px solid transparent;
+  border-image: url(https://w0.peakpx.com/wallpaper/94/360/HD-wallpaper-green-background-with-floral-ornaments-knitted-green-texture-flower-texture-green-fabric-background-seamless-floral-texture-vintage-green-background.jpg)
+    100 round;
+}

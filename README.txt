@@ -1,0 +1,2 @@
+I have added "<link rel="stylesheet" href="cssStyle.css" />" to gutenberg/1.html, gutenberg/2.html, gutenberg/3.html.
+I have changed the image source to "gutenberg_image" in gutenberg/1.html, gutenberg/2.html, gutenberg/3.html.
